@@ -1,0 +1,33 @@
+/* CONTACT SECTION */
+.contact {
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact__title {
+  text-align: center;
+  padding-inline: 20px;
+ }
+
+.cta {
+  background-color: var(--accent);
+  font-size: 3.2rem;
+  padding: 20px 50px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+ .contact {
+  height: auto;
+ } 
+
+ .contact__title {
+  margin-bottom: 20px;
+ }
+
+ .cta {
+  font-size: 1.6rem;
+ }
+}

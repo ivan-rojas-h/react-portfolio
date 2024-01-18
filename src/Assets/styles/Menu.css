@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  position: relative;
+}
+
+.menu__link {
+  margin-left: 20px;
+  font-weight: 700;
+  color: var(--secondary-color);
+
+  animation: enhance-menu linear both;
+  animation-timeline: scroll(root);
+  animation-range: 20px 300px;
+}
+
+.menu__link:hover {
+  color: var(--accent);
+}
+
+@keyframes enhance-menu {
+  to {
+    color: var(--primary-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+/* HERO SECTION STYLES */
+.hero {
+  /* background-color: var(--primary-alter-color); */
+  width: 100%;
+  height: calc(100vh - 40px);
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero__icon {
+  font-size: 12rem;
+  margin-inline: 2rem;
+  display: flexbox;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,55 @@
+/* PROJECTS SECTION STYLES */
+.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-block: 50px;
+}
+
+.projects__title {
+  margin-bottom: 50px;
+}
+
+.projects__buttons {
+  display: flex;
+  gap: 2rem;
+  font-size: 6rem;
+}
+
+.floating-buttons {
+  color: var(--accent);
+  float: none;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+}
+
+.floating-buttons:first-child {
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+/* CARDS */
+/* CARDS CONTAINER */
+.cards {
+  display: flexbox;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    width: 100%;
+  }
+
+  .floating-buttons:first-child{
+    margin: 0;
+  }
+
+  .projects__title {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .projects__buttons {
+    margin-top: 2rem;
+  }
+}
